@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.SelectMenuActivity">
+
+    <TextView
+        android:id="@+id/txtTableInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        tools:text="Bàn số 5" />
+
+    <!-- Danh sách menu của quán -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thực đơn của quán"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- << THAY ĐỔI Ở ĐÂY >> -->
+    <!-- Hiển thị các món đã chọn bằng TextView trong ScrollView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Món đã chọn"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#F5F5F5"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/txtSelectedItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="- Phở Bò (x2)\n- Trà đá (x3)\n- Nem rán (x1)"/>
+    </ScrollView>
+    <!-- << KẾT THÚC THAY ĐỔI >> -->
+
+    <!-- Tổng tiền -->
+    <TextView
+        android:id="@+id/txtTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền: 0 đ"
+        android:gravity="end"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <!-- Nút thanh toán -->
+    <Button
+        android:id="@+id/btnThanhToan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiến hành thanh toán"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

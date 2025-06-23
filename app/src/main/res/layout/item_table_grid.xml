@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="6dp"
+    android:background="@drawable/item_border"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/imgTable"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_table"
+        android:contentDescription="Bàn ăn" />
+
+    <TextView
+        android:id="@+id/txtId"
+        android:text="ID"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtSeats"
+        android:text="Seats"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:text="Status"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

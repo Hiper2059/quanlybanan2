@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Table ID TextView -->
+    <TextView
+        android:id="@+id/txtTableId"
+        android:text="Table ID"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Amount TextView -->
+    <TextView
+        android:id="@+id/txtAmount"
+        android:text="Amount"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp" />
+
+    <!-- Timestamp TextView -->
+    <TextView
+        android:id="@+id/txtTimestamp"
+        android:text="Timestamp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Lớp 1: Nền màu xanh nước biển nhạt (Gradient) -->
+    <!-- Bạn có thể tùy chỉnh màu sắc ở đây -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#81D4FA"
+                android:endColor="#4FC3F7"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Lớp 2: Hình ảnh sóng biển đặt ở dưới cùng -->
+    <item
+        android:drawable="@drawable/img_3"
+        android:gravity="bottom"
+        android:width="100dp"
+        android:height="20dp"
+        android:left="10dp"
+        android:bottom="2dp"
+        />
+    <!--
+        android:gravity="bottom": Đặt ảnh ở cạnh dưới của view.
+        android:width/height: Kích thước của ảnh sóng.
+        android:left/bottom: Căn lề cho ảnh sóng một chút.
+        Bạn có thể thử nghiệm các giá trị này để có kết quả ưng ý.
+    -->
+
+</layer-list>

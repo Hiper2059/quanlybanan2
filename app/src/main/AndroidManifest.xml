@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/img"
+        android:label="Quản lý bàn ăn"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuanLyBanAn">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!-- MainActivity: exported=true vì có intent-filter (launcher) -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"
+            android:label="Quản lý bàn ăn" />
+
+        <activity android:name=".activity.SelectMenuActivity"
+            android:label="Chọn món"/>
+        <activity android:name=".activity.ThanhToanActivity"
+            android:label="Thanh toán"/>
+        <activity android:name=".activity.ManageItemsActivity"
+            android:label="Quản lý món ăn"/>
+        <activity
+            android:name=".activity.AccountManagerActivity"
+            android:label="Quản lý tài khoản" />
+        <activity
+            android:name=".activity.RevenueReportActivity"
+            android:label="Báo cáo doanh thu" />
+        <!-- Khai báo thêm activity khác nếu có -->
+    </application>
+
+</manifest>
